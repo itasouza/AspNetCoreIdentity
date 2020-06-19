@@ -1,0 +1,9 @@
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Business\bin\Debug\netcoreapp3.0\DevIO.Business.deps.json
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Business\bin\Debug\netcoreapp3.0\DevIO.Business.dll
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Business\obj\Debug\netcoreapp3.0\DevIO.Business.csprojAssemblyReference.cache
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Business\obj\Debug\netcoreapp3.0\DevIO.Business.AssemblyInfoInputs.cache
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Business\obj\Debug\netcoreapp3.0\DevIO.Business.AssemblyInfo.cs
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Business\bin\Debug\netcoreapp3.0\DevIO.Business.pdb
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Business\obj\Debug\netcoreapp3.0\DevIO.Business.csproj.CoreCompileInputs.cache
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Business\obj\Debug\netcoreapp3.0\DevIO.Business.dll
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Business\obj\Debug\netcoreapp3.0\DevIO.Business.pdb

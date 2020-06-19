@@ -1,0 +1,12 @@
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Data\bin\Debug\netcoreapp3.0\DevIO.Data.deps.json
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Data\bin\Debug\netcoreapp3.0\DevIO.Data.dll
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Data\obj\Debug\netcoreapp3.0\DevIO.Data.csprojAssemblyReference.cache
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Data\obj\Debug\netcoreapp3.0\DevIO.Data.AssemblyInfoInputs.cache
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Data\obj\Debug\netcoreapp3.0\DevIO.Data.AssemblyInfo.cs
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Data\obj\Debug\netcoreapp3.0\DevIO.Data.csproj.CoreCompileInputs.cache
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Data\bin\Debug\netcoreapp3.0\DevIO.Data.pdb
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Data\bin\Debug\netcoreapp3.0\DevIO.Business.dll
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Data\bin\Debug\netcoreapp3.0\DevIO.Business.pdb
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Data\obj\Debug\netcoreapp3.0\DevIO.Data.csproj.CopyComplete
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Data\obj\Debug\netcoreapp3.0\DevIO.Data.dll
+C:\src\A Identity2.0\AspNetCoreIdentity\DevIO.Data\obj\Debug\netcoreapp3.0\DevIO.Data.pdb
