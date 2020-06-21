@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace DevIO.Business.Model
 {
-    public class PerfilAcesso : IdentityRole<string>
+    public class PerfilAcesso : IdentityRole<Guid>
     {
 
         public bool Ativo { get; set; }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DevIO.Business.Model
 {
-    public class Usuario : IdentityUser<string> 
+    public class Usuario : IdentityUser<Guid> 
     {
 
         public string FuncaoUsuario { get; set; }

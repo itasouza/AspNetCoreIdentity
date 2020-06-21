@@ -15,13 +15,13 @@ namespace DevIO.Data.Mapping
             builder.HasData(
              new PerfilAcesso
              {
-                 Id = Guid.NewGuid().ToString(),
+                 Id = Guid.NewGuid(),
                  Name = "Administrador",
                  NormalizedName = "ADMINISTRADOR"
              },
              new PerfilAcesso
              {
-                 Id = Guid.NewGuid().ToString(),
+                 Id = Guid.NewGuid(),
                  Name = "Visitante",
                  NormalizedName = "VISITANTE"
              });

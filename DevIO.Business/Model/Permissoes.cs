@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DevIO.Business.Model
 {
-    public class Permissoes : IdentityRoleClaim<int> 
+    public class Permissoes : IdentityRoleClaim<Guid> 
     {
         public bool Ativo { get; set; }
         public DateTime? DataCadastro { get; set; }

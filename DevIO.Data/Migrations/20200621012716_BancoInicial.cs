@@ -11,7 +11,7 @@ namespace DevIO.Data.Migrations
                 name: "AspNetRoles",
                 columns: table => new
                 {
-                    Id = table.Column<string>(nullable: false),
+                    Id = table.Column<Guid>(nullable: false),
                     Name = table.Column<string>(maxLength: 256, nullable: true),
                     NormalizedName = table.Column<string>(maxLength: 256, nullable: true),
                     ConcurrencyStamp = table.Column<string>(nullable: true),
@@ -28,7 +28,7 @@ namespace DevIO.Data.Migrations
                 name: "AspNetUsers",
                 columns: table => new
                 {
-                    Id = table.Column<string>(nullable: false),
+                    Id = table.Column<Guid>(nullable: false),
                     UserName = table.Column<string>(type: "varchar(100)", maxLength: 256, nullable: false),
                     NormalizedUserName = table.Column<string>(maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "varchar(100)", maxLength: 256, nullable: false),
@@ -55,24 +55,6 @@ namespace DevIO.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Permissoes",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    RoleId = table.Column<int>(nullable: false),
-                    ClaimType = table.Column<string>(nullable: true),
-                    ClaimValue = table.Column<string>(nullable: true),
-                    Ativo = table.Column<bool>(unicode: false, maxLength: 1, nullable: false),
-                    DataCadastro = table.Column<DateTime>(type: "datetime", nullable: true),
-                    DataAlteracao = table.Column<DateTime>(type: "datetime", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Permissoes", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Produto",
                 columns: table => new
                 {
@@ -88,28 +70,17 @@ namespace DevIO.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "UsuarioPerfil",
-                columns: table => new
-                {
-                    UserId = table.Column<int>(nullable: false),
-                    RoleId = table.Column<int>(nullable: false),
-                    Ativo = table.Column<bool>(unicode: false, maxLength: 1, nullable: false),
-                    DataCadastro = table.Column<DateTime>(type: "datetime", nullable: true),
-                    DataAlteracao = table.Column<DateTime>(type: "datetime", nullable: true)
-                },
-                constraints: table =>
-                {
-                });
-
-            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    RoleId = table.Column<string>(nullable: false),
+                    RoleId = table.Column<Guid>(nullable: false),
                     ClaimType = table.Column<string>(nullable: true),
-                    ClaimValue = table.Column<string>(nullable: true)
+                    ClaimValue = table.Column<string>(nullable: true),
+                    Ativo = table.Column<bool>(unicode: false, maxLength: 1, nullable: false),
+                    DataCadastro = table.Column<DateTime>(type: "datetime", nullable: true),
+                    DataAlteracao = table.Column<DateTime>(type: "datetime", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -128,7 +99,7 @@ namespace DevIO.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<string>(nullable: false),
+                    UserId = table.Column<Guid>(nullable: false),
                     ClaimType = table.Column<string>(nullable: true),
                     ClaimValue = table.Column<string>(nullable: true)
                 },
@@ -150,7 +121,7 @@ namespace DevIO.Data.Migrations
                     LoginProvider = table.Column<string>(nullable: false),
                     ProviderKey = table.Column<string>(nullable: false),
                     ProviderDisplayName = table.Column<string>(nullable: true),
-                    UserId = table.Column<string>(nullable: false)
+                    UserId = table.Column<Guid>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -167,8 +138,8 @@ namespace DevIO.Data.Migrations
                 name: "AspNetUserRoles",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(nullable: false),
-                    RoleId = table.Column<string>(nullable: false)
+                    UserId = table.Column<Guid>(nullable: false),
+                    RoleId = table.Column<Guid>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -191,7 +162,7 @@ namespace DevIO.Data.Migrations
                 name: "AspNetUserTokens",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(nullable: false),
+                    UserId = table.Column<Guid>(nullable: false),
                     LoginProvider = table.Column<string>(nullable: false),
                     Name = table.Column<string>(nullable: false),
                     Value = table.Column<string>(nullable: true)
@@ -210,12 +181,12 @@ namespace DevIO.Data.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "Ativo", "ConcurrencyStamp", "DataAlteracao", "DataCadastro", "Name", "NormalizedName" },
-                values: new object[] { "2f6dd3a7-b2ad-4024-a217-8b0e398dd793", false, "558f5268-aef2-4788-bb1e-8a73b849927a", null, null, "Administrador", "ADMINISTRADOR" });
+                values: new object[] { new Guid("d1bd56d0-0acc-4fe3-bfe5-fe428a8f369b"), false, "26369ab2-48d9-4bbb-bccf-c7d5141bdb53", null, null, "Administrador", "ADMINISTRADOR" });
 
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "Ativo", "ConcurrencyStamp", "DataAlteracao", "DataCadastro", "Name", "NormalizedName" },
-                values: new object[] { "768ff5bb-d840-4ee2-95e6-f5951b656e1d", false, "5011adc5-3442-4e2e-bd2b-b3dbd0de12e6", null, null, "Visitante", "VISITANTE" });
+                values: new object[] { new Guid("e1768600-909c-4823-a661-b978c2984193"), false, "f43524cf-9a4f-43ba-9277-c749c162fbd6", null, null, "Visitante", "VISITANTE" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -275,13 +246,7 @@ namespace DevIO.Data.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Permissoes");
-
-            migrationBuilder.DropTable(
                 name: "Produto");
-
-            migrationBuilder.DropTable(
-                name: "UsuarioPerfil");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

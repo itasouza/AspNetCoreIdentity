@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace DevIO.Data.Context
 {
-    public class MeuDbContext : IdentityDbContext<Usuario,PerfilAcesso,string>
+
+    //https://docs.microsoft.com/pt-br/aspnet/core/security/authentication/customize-identity-model?view=aspnetcore-3.1
+
+    public class MeuDbContext : IdentityDbContext<Usuario,PerfilAcesso,Guid,IdentityUserClaim<Guid>,UsuarioPerfil, IdentityUserLogin<Guid>,Permissoes, IdentityUserToken<Guid>> 
     {
 
         public DbSet<Usuario> Usuario { get; set; }

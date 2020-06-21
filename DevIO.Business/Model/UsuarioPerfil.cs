@@ -5,10 +5,7 @@ using System.Text;
 
 namespace DevIO.Business.Model
 {
-    public class UsuarioPerfil : IdentityUserRole<int>
+    public class UsuarioPerfil : IdentityUserRole<Guid>
     {
-        public bool Ativo { get; set; }
-        public DateTime? DataCadastro { get; set; }
-        public DateTime? DataAlteracao { get; set; }
     }
 }
