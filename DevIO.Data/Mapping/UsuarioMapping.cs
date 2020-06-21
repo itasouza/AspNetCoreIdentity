@@ -8,7 +8,6 @@ namespace DevIO.Data.Mapping
     {
         public void Configure(EntityTypeBuilder<Usuario> builder)
         {
-            builder.HasKey(p => p.Id);
             builder.Property(p => p.Id).ValueGeneratedOnAdd();
             builder.Property(p => p.UserName).IsRequired().HasColumnType("varchar(100)");
             builder.Property(p => p.Email).IsRequired().HasColumnType("varchar(100)");

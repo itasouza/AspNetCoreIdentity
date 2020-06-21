@@ -1,0 +1,207 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\ProjetoTeste\\ProjetoTeste.csproj": {}
+  },
+  "projects": {
+    "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\DevIO.Business\\DevIO.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\DevIO.Business\\DevIO.Business.csproj",
+        "projectName": "DevIO.Business",
+        "projectPath": "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\DevIO.Business\\DevIO.Business.csproj",
+        "packagesPath": "C:\\Users\\PCEstudo\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\DevIO.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PCEstudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\DevIO.Data\\DevIO.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\DevIO.Data\\DevIO.Data.csproj",
+        "projectName": "DevIO.Data",
+        "projectPath": "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\DevIO.Data\\DevIO.Data.csproj",
+        "packagesPath": "C:\\Users\\PCEstudo\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\DevIO.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PCEstudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\DevIO.Business\\DevIO.Business.csproj": {
+                "projectPath": "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\DevIO.Business\\DevIO.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\ProjetoTeste\\ProjetoTeste.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\ProjetoTeste\\ProjetoTeste.csproj",
+        "projectName": "ProjetoTeste",
+        "projectPath": "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\ProjetoTeste\\ProjetoTeste.csproj",
+        "packagesPath": "C:\\Users\\PCEstudo\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\ProjetoTeste\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PCEstudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\DevIO.Data\\DevIO.Data.csproj": {
+                "projectPath": "C:\\src\\A Identity2.0\\AspNetCoreIdentity\\DevIO.Data\\DevIO.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

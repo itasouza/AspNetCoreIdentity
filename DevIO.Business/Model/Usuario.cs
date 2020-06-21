@@ -11,9 +11,6 @@ namespace DevIO.Business.Model
         public string FuncaoUsuario { get; set; }
         public string Imagem { get; set; }
 
-        /* EF relacionamento*/
-        public IEnumerable<UsuarioPerfil> UsuarioPerfil { get; set; }
-
         public bool Ativo { get; set; }
         public DateTime? DataCadastro { get; set; }
         public DateTime? DataAlteracao { get; set; }

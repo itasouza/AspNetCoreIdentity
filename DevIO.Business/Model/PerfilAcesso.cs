@@ -4,9 +4,8 @@ using System.Collections.Generic;
 
 namespace DevIO.Business.Model
 {
-    public class PerfilAcesso : IdentityRoleClaim<int>
+    public class PerfilAcesso : IdentityRole<string>
     {
-        public IEnumerable<UsuarioPerfil> UsuarioPerfil { get; set; }
 
         public bool Ativo { get; set; }
         public DateTime? DataCadastro { get; set; }

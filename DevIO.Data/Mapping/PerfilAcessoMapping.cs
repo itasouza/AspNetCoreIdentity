@@ -1,6 +1,7 @@
 ﻿using DevIO.Business.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System;
 
 namespace DevIO.Data.Mapping
 {
@@ -9,25 +10,20 @@ namespace DevIO.Data.Mapping
     {
         public void Configure(EntityTypeBuilder<PerfilAcesso> builder)
         {
-            builder.HasKey(p => p.Id);
             builder.Property(p => p.Id).ValueGeneratedOnAdd();
-
 
             builder.HasData(
              new PerfilAcesso
              {
-                 ClaimType = "Administrador",
-                 ClaimValue = "Excluir,Editar,Criar,Visualizar"
+                 Id = Guid.NewGuid().ToString(),
+                 Name = "Administrador",
+                 NormalizedName = "ADMINISTRADOR"
              },
              new PerfilAcesso
              {
-                 ClaimType = "Visitante",
-                 ClaimValue = "Visualizar"
-             },
-             new PerfilAcesso
-             {
-                  ClaimType = "Apresentacao",
-                  ClaimValue = "Editar,Criar,Visualizar"
+                 Id = Guid.NewGuid().ToString(),
+                 Name = "Visitante",
+                 NormalizedName = "VISITANTE"
              });
 
             builder.Property(e => e.Ativo).HasMaxLength(1).IsUnicode(false);

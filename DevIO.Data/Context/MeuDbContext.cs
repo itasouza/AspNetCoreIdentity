@@ -1,4 +1,6 @@
 ﻿using DevIO.Business.Model;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
@@ -7,9 +9,14 @@ using System.Threading.Tasks;
 
 namespace DevIO.Data.Context
 {
-    public class MeuDbContext : DbContext
+    public class MeuDbContext : IdentityDbContext<Usuario,PerfilAcesso,string>
     {
-           //demais classes do sistema
+
+        public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<PerfilAcesso> PerfilAcesso { get; set; }
+        public DbSet<UsuarioPerfil> UsuarioPerfil { get; set; }
+        public DbSet<Permissoes> Permissoes { get; set; }
+        public DbSet<Produto> Produto { get; set; }
 
         public MeuDbContext(DbContextOptions options) : base(options)
         {
